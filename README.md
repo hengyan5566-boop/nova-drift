@@ -7,11 +7,12 @@
 A neon twin-stick arena shooter, made for the
 [make.fun best game bounty](https://make.fun/bounty/best-game-01).
 
-You are the last pilot of the drift fleet. Survive escalating waves of
-chasers, snipers and splitters, chain kills to raise your combo multiplier,
-grab score orbs, and break the flagship that arrives every 5th wave.
-Three lives, one shield pickup at a time, and a dash that makes you briefly
-untouchable — spend it well.
+You are the last pilot of the drift fleet. Survive a 10-drift campaign
+against chasers, snipers and splitters, chain kills to raise your combo
+multiplier and its grade, collect NOVA CORES, and break the flagship —
+THE HOLLOW STAR — that guards drifts 5 and 10. Clear drift 10 and the
+drift is yours. Three lives of hull, one shield pickup at a time, and a
+dash that makes you briefly untouchable — spend it well.
 
 ## How to play
 
@@ -49,10 +50,10 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 The game reads three harmless URL parameters, used only to stage the
 screenshots in `screenshots/`. They never affect normal play:
 
-- `game/index.html?demo=1` — start at wave 3 with an autopilot flying the
+- `game/index.html?demo=1` — start at drift 3 with an autopilot flying the
   ship, so the action shot shows real combat.
-- `game/index.html?state=boss` — jump straight into the wave-5 flagship
-  fight (autopilot on).
+- `game/index.html?state=boss` — jump straight into the drift-5 flagship
+  fight against THE HOLLOW STAR (autopilot on).
 - `game/index.html?state=gameover` — show the game-over screen with a
   plausible score.
 
@@ -61,6 +62,7 @@ screenshots in `screenshots/`. They never affect normal play:
 - `main.ts` — the entry program (copies the game and writes the dossier)
 - `vendor/makefun-game.ts` — the kit's library, unchanged
 - `game/index.html` — page shell
-- `game/game.js` — the whole game: input, audio, waves, combat, rendering
+- `game/game.js` — the whole game: input, audio, the 10-drift campaign,
+  combat, the named flagship, the HUD, rendering
 - `game/style.css` — page presentation only
 - `screenshots/` — four real renders of the game running in Chrome
